@@ -1,11 +1,11 @@
-![](https://imgur.com/4PJrDZZ.jpg)
+![](https://github.com/jeyakatsa/Jehova/blob/main/assets/Jehova-Logo.jpg)
 
 # Jehova: A Smart-Contract Language for Java Developers
 
 ## *The Proposal*
 
 ### Abstract
-Aggregated from a few core developers from within the Ethereum foundation, the best path to traverse in order for Java-like fundamentals to be abstracted and compiled into the EVM, is for a brand-new programming language to be erected capable of running Java-like programs on the EVM: *Jehova*.
+Siphoning advice aggregated from a few core developers from within the Ethereum foundation, the best path to traverse in order for Java-like fundamentals to be abstracted and compiled into the EVM, is for a brand-new programming language to be erected capable of running Java-like programs on the EVM: *Jehova*.
 
 ### Motivation
 Currently, there are 200 thousand Solidity/Ethereum Developers and 7 million Java Developers Worldwide respectfully. Thus, allowing Smart-Contracts to be built in a language familiar with Java developers would help onboard more developers into the Ethereum Ecosystem.
