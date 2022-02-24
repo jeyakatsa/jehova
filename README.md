@@ -10,8 +10,6 @@
 
 --------------------------------------------------------
 
-## *The Proposal*
-
 ### Abstract
 Siphoning advice aggregated from a few core developers from within the Ethereum foundation, the best path to traverse in order for Java-like fundamentals to be abstracted and compiled into the EVM, is for a brand-new programming language to be erected capable of running Java-like programs on the EVM: *Jehova*.
 
