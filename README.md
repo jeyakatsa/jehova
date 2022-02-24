@@ -18,8 +18,13 @@ Siphoning advice aggregated from a few core developers from within the Ethereum 
 ### Motivation
 Currently, there are 200 thousand Solidity/Ethereum Developers and 7 million Java Developers Worldwide respectfully. Thus, allowing Smart-Contracts to be built in a language familiar with Java developers would help onboard more developers into the Ethereum Ecosystem.
 
-### Build Tools
+### Production Goal
 The main goal is for Smart-Contracts on Ethereum to be built with Java tools like Gradle as to remain relevant with Java clients like Consensys with plans to expand to build tools like Maven and Jenkins in order to remain independent from any client in the future.
+
+### Progress
+Work has started with an elated progression and completion time for the basic grammar and semantics to be completed before the end of 2022, more info can be found within the [Research & Development](https://github.com/jeyakatsa/jehova/tree/main/R%26D-files) paper.
+
+--------------------------------------------------------
 
 ### Language Examples
 
@@ -54,6 +59,3 @@ public class SimpleStorage {
     }
 }
 ```
-
-
-*Note: This R&D project is still early in its development, so questions/contributions/conversations are heavily welcome.*
