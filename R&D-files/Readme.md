@@ -10,15 +10,17 @@
 
 ### 2022
 
+- [ ] Complete base grammar/semantics
+
 **Q1**
 
 - Research: 
-  - [ ] Learn how [YUL](https://docs.soliditylang.org/en/latest/yul.html) can be implemented from compilation.
+  - [ ] Learn how [YUL](https://docs.soliditylang.org/en/latest/yul.html) can be implemented from compilation from Jehova's semantics, syntax and grammar.
   - [ ] Open blog/s to reflect on discoveries and to also offer discussions.
 
 - Development: 
   - [ ] Begin building base syntax for library.
-  - [ ] Grammar and semantics of Jehova
+  - [ ] Begin building grammar and semantics of Jehova
  
 
 **Q2-Q4**
