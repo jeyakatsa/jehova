@@ -1,4 +1,4 @@
-<img src="https://github.com/jeyakatsa/Jehova/blob/main/assets/Jehova-Logo.png" width="200px">
+<img src="https://github.com/jeyakatsa/Jehova/blob/main/assets/Jehova-Logo.png" width="150px">
 
 # Jehova: A Smart-Contract Language for Java Developers
 
