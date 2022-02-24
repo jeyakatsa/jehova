@@ -2,6 +2,12 @@
 
 # Jehova: A Smart-Contract Language for Java Developers
 
+## This project is a fork from:
+- [Java Smart Contract Abstraction for Ethereum R&D](https://github.com/jeyakatsa/ethereum-smart-contract-java-abstraction/tree/main/R%26D-files)
+- [Java Smart Contract Abstraction for Ethereum](https://github.com/jeyakatsa/Ethereum-Smart-Contract-Java-Abstraction)
+
+--------------------------------------------------------
+
 ## *The Proposal*
 
 ### Abstract
@@ -49,8 +55,3 @@ public class SimpleStorage {
 
 
 *Note: This R&D project is still early in its development, so questions/contributions/conversations are heavily welcome.*
-
-
-## Early Work
-- [Java Smart Contract Abstraction for Ethereum R&D](https://github.com/jeyakatsa/ethereum-smart-contract-java-abstraction/tree/main/R%26D-files)
-- [Java Smart Contract Abstraction for Ethereum](https://github.com/jeyakatsa/Ethereum-Smart-Contract-Java-Abstraction)
