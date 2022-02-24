@@ -1,10 +1,12 @@
 <img src="https://github.com/jeyakatsa/Jehova/blob/main/assets/Jehova-Logo.png" width="150px">
 
-# Jehova: A Smart-Contract Language for Java Developers
+# Jehova
 
-## This project is a fork from:
-- [Java Smart Contract Abstraction for Ethereum R&D](https://github.com/jeyakatsa/ethereum-smart-contract-java-abstraction/tree/main/R%26D-files)
+### A Smart-Contract Language for Java Developers
+
+#### forked from:
 - [Java Smart Contract Abstraction for Ethereum](https://github.com/jeyakatsa/Ethereum-Smart-Contract-Java-Abstraction)
+- [Java Smart Contract Abstraction for Ethereum R&D](https://github.com/jeyakatsa/ethereum-smart-contract-java-abstraction/tree/main/R%26D-files)
 
 --------------------------------------------------------
 
