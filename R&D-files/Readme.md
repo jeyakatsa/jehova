@@ -14,14 +14,14 @@
 
 **Q1**
 
-- Research: 
+- Docs: 
+  - [X] Begin building grammar and semantics of Jehova: [Grammar-Semantics-R&D]()
+  - [ ] Begin building base syntax for library.
+
+- Other R&D: 
   - [ ] Research how to implement a new compiler for Windows based systems (with Linux/MacOs next)
   - [ ] Learn how [YUL](https://docs.soliditylang.org/en/latest/yul.html) can be implemented from compilation from Jehova's semantics, syntax and grammar.
   - [ ] Open blog/s to reflect on discoveries and to also offer discussions.
-
-- Development: 
-  - [X] Begin building grammar and semantics of Jehova: [Grammar-Semantics-R&D]()
-  - [ ] Begin building base syntax for library.
  
 
 **Q2-Q4**
