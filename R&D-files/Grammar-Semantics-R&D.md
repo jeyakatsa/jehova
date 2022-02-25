@@ -1,0 +1,25 @@
+# Grammar & Semantics Research & Development
+
+## Java Overall Semantics (and how it might relate to Jehova):
+
+### Chapter 1:
+
+The Java® programming language is a general-purpose, concurrent, class-based, object-oriented language. It is designed to be simple enough that many programmers can achieve fluency in the language. The Java programming language is related to C and C++ but is organized rather differently, with a number of aspects of C and C++ omitted and a few ideas from other languages included. It is intended to be a production language, not a research language, and so, as C. A. R. Hoare suggested in his classic paper on language design, the design has avoided including new and untested features.
+
+The Java programming language is strongly and statically typed. This specification clearly distinguishes between the compile-time errors that can and must be detected at compile time, and those that occur at run time. Compile time normally consists of translating programs into a machine-independent byte code representation. Run-time activities include loading and linking of the classes needed to execute a program, optional machine code generation and dynamic optimization of the program, and actual program execution.
+
+[Reference](https://docs.oracle.com/javase/specs/jls/se7/html/jls-1.html)
+
+### Unicode:
+
+Programs are written using the Unicode character set. Information about this character set and its associated character encodings may be found at http://www.unicode.org/.
+
+The Java SE platform tracks the Unicode specification as it evolves. The precise version of Unicode used by a given release is specified in the documentation of the class Character.
+
+The Java programming language represents text in sequences of 16-bit code units, using the UTF-16 encoding.
+
+Some APIs of the Java SE platform, primarily in the Character class, use 32-bit integers to represent code points as individual entities. The Java SE platform provides methods to convert between 16-bit and 32-bit representations.
+
+*Can we convert in Jehova, 32-bit integers into 16 bit (similar to Python)?*
+
+[Reference](https://docs.oracle.com/javase/specs/jls/se7/html/jls-3.html)
