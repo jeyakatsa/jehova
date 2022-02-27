@@ -15,7 +15,7 @@
 **Q1**
 
 - Docs: 
-  - [X] Begin building grammar and semantics of Jehova: [Grammar-Semantics-R&D]()
+  - [X] Begin building grammar and semantics of Jehova: [Grammar-Semantics-R&D](https://github.com/jeyakatsa/jehova/blob/main/R%26D-files/Grammar-Semantics-R%26D.md)
   - [ ] Begin building base syntax for library.
 
 - Other R&D: 
