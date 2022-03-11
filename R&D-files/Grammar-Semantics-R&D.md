@@ -107,4 +107,45 @@ The Java programming language specifies a standard way of transforming a program
 
 This transformed version is equally acceptable to a Java compiler and represents the exact same program. The exact Unicode source can later be restored from this ASCII form by converting each escape sequence where multiple u's are present to a sequence of Unicode characters with one fewer u, while simultaneously converting each escape sequence with a single u to the corresponding single Unicode character.
 
+#### Line Terminators
+A Java compiler next divides the sequence of Unicode input characters into lines by recognizing line terminators.
+```
+LineTerminator:
+    the ASCII LF character, also known as "newline"
+    the ASCII CR character, also known as "return"
+    the ASCII CR character followed by the ASCII LF character
+```    
 
+InputCharacter:
+    UnicodeInputCharacter but not CR or LF
+Lines are terminated by the ASCII characters CR, or LF, or CR LF. The two characters CR immediately followed by LF are counted as one line terminator, not two.
+
+A line terminator specifies the termination of the // form of a comment.
+
+The lines defined by line terminators may determine the line numbers produced by a Java compiler.
+
+The result is a sequence of line terminators and input characters, which are the terminal symbols for the third step in the tokenization process.
+
+#### Input Elements and Tokens
+The input characters and line terminators that result from escape processing and then input line recognition are reduced to a sequence of input elements.
+
+```
+Input:
+    InputElementsopt Subopt
+
+InputElements:
+    InputElement
+    InputElements InputElement
+
+InputElement:
+    WhiteSpace
+    Comment
+    Token
+
+Token:
+    Identifier
+    Keyword
+    Literal
+    Separator
+    Operator
+```    
