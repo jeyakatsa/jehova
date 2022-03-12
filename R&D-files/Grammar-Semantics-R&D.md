@@ -149,3 +149,27 @@ Token:
     Separator
     Operator
 ```    
+### Chapter 4. Types, Values, and Variables
+
+The Java programming language is a statically typed language, which means that every variable and every expression has a type that is known at compile time.
+
+The Java programming language is also a strongly typed language, because types limit the values that a variable can hold or that an expression can produce, limit the operations supported on those values, and determine the meaning of the operations. Strong static typing helps detect errors at compile time.
+
+The types of the Java programming language are divided into two categories: primitive types and reference types. The primitive types are the boolean type and the numeric types. The numeric types are the integral types byte, short, int, long, and char, and the floating-point types float and double. The reference types are class types, interface types, and array types. There is also a special null type. An object is a dynamically created instance of a class type or a dynamically created array. The values of a reference type are references to objects. All objects, including arrays, support the methods of class Object. String literals are represented by String object.
+
+#### The Kinds of Types and Values
+There are two kinds of types in the Java programming language: primitive types and reference types. There are, correspondingly, two kinds of data values that can be stored in variables, passed as arguments, returned by methods, and operated on: primitive values and reference values.
+
+```
+Type:
+    PrimitiveType
+    ReferenceType
+ ```
+
+There is also a special null type, the type of the expression null, which has no name.
+
+Because the null type has no name, it is impossible to declare a variable of the null type or to cast to the null type.
+
+The null reference is the only possible value of an expression of null type.
+
+The null reference can always undergo a widening reference conversion to any reference type.
