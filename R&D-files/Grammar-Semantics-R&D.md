@@ -173,3 +173,32 @@ Because the null type has no name, it is impossible to declare a variable of the
 The null reference is the only possible value of an expression of null type.
 
 The null reference can always undergo a widening reference conversion to any reference type.
+
+##### Primitive Types and Values
+A primitive type is predefined by the Java programming language and named by its reserved keyword:
+
+```
+PrimitiveType:
+    NumericType
+    boolean
+
+NumericType:
+    IntegralType
+    FloatingPointType
+
+IntegralType: one of
+    byte short int long char
+
+FloatingPointType: one of
+    float double
+```
+
+Primitive values do not share state with other primitive values.
+
+The numeric types are the integral types and the floating-point types.
+
+The integral types are byte, short, int, and long, whose values are 8-bit, 16-bit, 32-bit and 64-bit signed two's-complement integers, respectively, and char, whose values are 16-bit unsigned integers representing UTF-16 code units.
+
+The floating-point types are float, whose values include the 32-bit IEEE 754 floating-point numbers, and double, whose values include the 64-bit IEEE 754 floating-point numbers.
+
+The boolean type has exactly two values: true and false.
