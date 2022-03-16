@@ -202,3 +202,31 @@ The integral types are byte, short, int, and long, whose values are 8-bit, 16-bi
 The floating-point types are float, whose values include the 32-bit IEEE 754 floating-point numbers, and double, whose values include the 64-bit IEEE 754 floating-point numbers.
 
 The boolean type has exactly two values: true and false.
+
+######  Integral Types and Values
+The values of the integral types are integers in the following ranges:
+
+- For byte, from -128 to 127, inclusive
+- For short, from -32768 to 32767, inclusive
+- For int, from -2147483648 to 2147483647, inclusive
+- For long, from -9223372036854775808 to 9223372036854775807, inclusive
+- For char, from '\u0000' to '\uffff' inclusive, that is, from 0 to 65535
+
+###### Integer Operations
+The Java programming language provides a number of operators that act on integral values:
+
+- The comparison operators, which result in a value of type boolean:
+- - The numerical comparison operators `<`, `<=`, `>`, and `>=`
+- - The numerical equality operators `==` and `!=`
+- The numerical operators, which result in a value of type int or long:
+- - The unary plus and minus operators `+` and `-`
+- - The multiplicative operators `*`, `/`, and `%`
+- - The additive operators `+` and `-`
+- - The increment operator `++`, both prefix and postfix
+- - The decrement operator `--`, both prefix and postfix
+- - The signed and unsigned shift operators `<<`, `>>`, and `>>>`
+- - The bitwise complement operator `~`
+- - The integer bitwise operators `&`, `^`, and `|`
+- The conditional operator `? :`
+- The cast operator, which can convert from an integral value to a value of any specified numeric type
+- The string concatenation operator `+`, which, when given a String operand and an integral operand, will convert the integral operand to a String representing its value in decimal form, and then produce a newly created String that is the concatenation of the two strings
