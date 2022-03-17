@@ -16,13 +16,15 @@
 **Q1**
 
 - Docs: 
-  - [X] Begin building grammar and semantics of Jehova: [Grammar-Semantics-R&D](https://github.com/jeyakatsa/jehova/blob/main/R%26D-files/Grammar-Semantics-R%26D.md)
-  - [ ] Begin building base syntax for library.
+  - [ ] Carve out MVP blueprint *[In-Development](https://github.com/jeyakatsa/jehova/blob/main/R&D-files/MVPblueprint.md)*.
+  - [X] Begin building grammar and semantics of Jehova: *[In-Development](https://github.com/jeyakatsa/jehova/blob/main/R%26D-files/Grammar-Semantics-R%26D.md)*
+  - [ ] Begin building base syntax for library *[announced]*.
+  - [ ] Carve out MVP blueprint *[announced]*.
 
 - Other R&D: 
-  - [ ] Research how to implement a new compiler for Windows based systems (with Linux/MacOs next)
-  - [ ] Learn how [YUL](https://docs.soliditylang.org/en/latest/yul.html) can be implemented from compilation from Jehova's semantics, syntax and grammar.
-  - [ ] Open blog/s to reflect on discoveries and to also offer discussions.
+  - [ ] Research how to implement a new compiler for Windows based systems (with Linux/MacOs next) *[announced]*.
+  - [ ] Learn how [YUL](https://docs.soliditylang.org/en/latest/yul.html) can be implemented from compilation from Jehova's semantics, syntax and grammar *[announced]*.
+  - [ ] Open blog/s to reflect on discoveries and to also offer discussions *[announced]*.
  
 
 **Q2-Q4**
