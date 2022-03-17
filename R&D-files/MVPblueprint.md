@@ -20,7 +20,7 @@ The second stage of the pipeline is the parser. Will try to see if can parse wit
 
 ***More To Be Added Here***
 
-## Step 2: Create simple compiler to read created Syntax.
+## Step 2: Integrate lexed syntax into compiler for translation.
 
 ### Part 1. Transpiling
 
