@@ -16,8 +16,8 @@
 **Q1**
 
 - Docs: 
-  - [ ] Carve out MVP blueprint *[In-Development](https://github.com/jeyakatsa/jehova/blob/main/R&D-files/MVPblueprint.md)*.
-  - [X] Begin building grammar and semantics of Jehova: *[In-Development](https://github.com/jeyakatsa/jehova/blob/main/R%26D-files/Grammar-Semantics-R%26D.md)*
+  - [ ] Carve out MVP blueprint *[[In-Development](https://github.com/jeyakatsa/jehova/blob/main/R&D-files/MVPblueprint.md)]*.
+  - [X] Begin building grammar and semantics of Jehova *[[In-Development](https://github.com/jeyakatsa/jehova/blob/main/R%26D-files/Grammar-Semantics-R%26D.md)]*
   - [ ] Begin building base syntax for library *[announced]*.
   - [ ] Carve out MVP blueprint *[announced]*.
 
