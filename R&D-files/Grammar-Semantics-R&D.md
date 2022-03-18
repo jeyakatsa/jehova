@@ -229,4 +229,38 @@ The Java programming language provides a number of operators that act on integra
 - - The integer bitwise operators `&`, `^`, and `|`
 - The conditional operator `? :`
 - The cast operator, which can convert from an integral value to a value of any specified numeric type
-- The string concatenation operator `+`, which, when given a String operand and an integral operand, will convert the integral operand to a String representing its value in decimal form, and then produce a newly created String that is the concatenation of the two strings
+- The string concatenation operator `+`, which, when given a String operand and an integral operand, will convert the integral operand to a String representing its value in decimal form, and then produce a newly created String that is the concatenation of the two strings.
+
+###### Reference Types and Values
+There are four kinds of reference types: `class` types, `interface` types, type `variables`, and `array` types.
+
+```
+ReferenceType:
+    ClassOrInterfaceType
+    TypeVariable
+    ArrayType
+
+ClassOrInterfaceType:
+    ClassType
+    InterfaceType
+
+ClassType:
+    TypeDeclSpecifier TypeArgumentsopt
+
+InterfaceType:
+    TypeDeclSpecifier TypeArgumentsopt
+
+TypeDeclSpecifier:
+    TypeName  
+    ClassOrInterfaceType . Identifier
+
+TypeName:
+    Identifier
+    TypeName . Identifier
+
+TypeVariable:
+    Identifier
+
+ArrayType:
+    Type [ ]
+```
