@@ -1,4 +1,4 @@
-<img src="https://github.com/jeyakatsa/Jehova/blob/main/assets/Jehova-Logo.png" width="100px">
+<img src="https://github.com/jeyakatsa/jehova/blob/main/assets/Jehova-Logo.png" width="100px">
 
 # Jehova
 
