@@ -264,3 +264,42 @@ TypeVariable:
 ArrayType:
     Type [ ]
 ```
+
+###### Type Variables
+A type variable is an unqualified identifier used as a type in class, interface, method, and constructor bodies.
+
+A type variable is declared as a type parameter of a generic class declaration, generic interface declaration, generic method declaration, or generic constructor declaration.
+
+```
+TypeParameter:
+    TypeVariable TypeBoundopt
+
+TypeBound:
+    extends TypeVariable
+    extends ClassOrInterfaceType AdditionalBoundListopt
+
+AdditionalBoundList:
+    AdditionalBound AdditionalBoundList
+    AdditionalBound
+
+AdditionalBound:
+    & InterfaceType
+```    
+    
+The scope of a type variable declared as a type parameter is specified in.
+
+Every type variable declared as a type parameter has a bound. If no bound is declared for a type variable, Object is assumed. If a bound is declared, it consists of either:
+
+- a single type variable T, or
+
+- a class or interface type T possibly followed by interface types I1 & ... & In.
+
+It is a compile-time error if any of the types I1 ... In is a class type or type variable.
+
+The erasures of all constituent types of a bound must be pairwise different, or a compile-time error occurs.
+
+A type variable must not at the same time be a subtype of two interface types which are different parameterizations of the same generic interface, or a compile-time error occurs.
+
+The order of types in a bound is only significant in that the erasure of a type variable is determined by the first type in its bound, and that a class type or type variable may only appear in the first position.
+
+The members of a type variable X with bound T & I1 & ... & In are the members of the intersection type T & I1 & ... & In appearing at the point where the type variable is declared.
