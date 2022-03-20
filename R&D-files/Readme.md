@@ -5,13 +5,15 @@
 #### Note: *This R&D paper was forked from [Java Abstraction R&D](https://github.com/jeyakatsa/ethereum-smart-contract-java-abstraction/tree/main/r%26d-files) with an overall goal of bringing more developers into the Ethereum ecosystem.*
 
 # Estimated Roadmap 
-## (5-10 year estimated completion time)
 
 ## Year-By-Year
 
 ### 2022
 
-- [ ] Complete base grammar/semantics
+- Overall: 
+  - [ ] Complete base grammar/semantics
+  - [ ] Publish official website for updates/blog-posts/etc (jehova.foundation)
+  - [ ] Create Twitter page
 
 **Q1**
 
