@@ -25,5 +25,5 @@ The second stage of the pipeline is the parser. Will try to see if can parse wit
 ### Part 1. Transpiling
 
 #### 1. Transpiling
-Write Jehova to Java transpiler, and the ability to automatically compile the output source with GCC.
+Write Jehova to Solidity transpiler, and the ability to automatically compile the output source with GCC.
 
