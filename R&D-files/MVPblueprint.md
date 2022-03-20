@@ -27,3 +27,6 @@ The second stage of the pipeline is the parser. Will try to see if can parse wit
 #### 1. Transpiling
 Write Jehova to Solidity transpiler, and the ability to automatically compile the output source with GCC.
 
+## Notes for Production
+
+[Structure of a Smart-Contract](https://blog.knoldus.com/structure-of-a-contract-in-solidity/#:~:text=Smart%20Contracts%20for%20Ethereum%20are,classes%20in%20object%2Doriented%20languages)
