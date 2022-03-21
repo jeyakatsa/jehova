@@ -303,3 +303,42 @@ A type variable must not at the same time be a subtype of two interface types wh
 The order of types in a bound is only significant in that the erasure of a type variable is determined by the first type in its bound, and that a class type or type variable may only appear in the first position.
 
 The members of a type variable X with bound T & I1 & ... & In are the members of the intersection type T & I1 & ... & In appearing at the point where the type variable is declared.
+
+###### Parameterized Types
+A generic class or interface declaration C with one or more type parameters A1,...,An which have corresponding bounds B1,...,Bn defines a set of parameterized types, one for each possible invocation of the type parameter section.
+
+Each parameterized type in the set is of the form C<T1,...,Tn> where each type argument Ti ranges over all types that are subtypes of all types listed in the corresponding bound. That is, for each bound type Si in Bi, Ti is a subtype of Si[F1:=T1,...,Fn:=Tn].
+
+A parameterized type is written as a ClassType or InterfaceType that contains at least one type declaration specifier immediately followed by a type argument list <T1,...,Tn>. The type argument list denotes a particular invocation of the type parameters of the generic type indicated by the type declaration specifier.
+
+Given a type declaration specifier immediately followed by a type argument list, let C be the final Identifier in the specifier.
+
+It is a compile-time error if C is not the name of a generic class or interface, or if the number of type arguments in the type argument list differs from the number of type parameters of C.
+
+Let P = C<T1,...,Tn> be a parameterized type. It must be the case that, after P is subjected to capture conversion (§5.1.10) resulting in the type C<X1,...,Xn>, for each type argument Xi (1 ≤ i ≤ n), Xi <: Bi[A1:=X1,...,An:=Xn], or a compile-time error occurs.
+
+The notation [Ai:=Ti] denotes substitution of the type variable Ai with the type Ti for 1 ≤ i ≤ n, and is used throughout this specification.
+
+In this specification, whenever we speak of a class or interface type, we include the generic version as well, unless explicitly excluded.
+
+Examples of parameterized types:
+
+```
+Vector<String>
+
+Seq<Seq<A>>
+
+Seq<String>.Zipper<Integer>
+
+Collection<Integer>
+
+Pair<String,String>
+
+Examples of incorrect invocations of a generic type:
+
+Vector<int> is illegal, as primitive types cannot be type arguments.
+
+Pair<String> is illegal, as there are not enough type arguments.
+
+Pair<String,String,String> is illegal, as there are too many type arguments.
+```
