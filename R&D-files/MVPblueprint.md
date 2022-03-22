@@ -7,6 +7,60 @@
 #### 1. Lexing
 The first step in most programming languages is lexing, or tokenizing. ‘Lex’ is short for lexical analysis, a very fancy word for splitting a bunch of text into tokens.
 
+The lexer takes in text (source code) and transforms it into tokens. Tokens are things like a number, a string, or a name.
+
+In Cell , the types of tokens are:
+
+Numbers, e.g 12 or 4.2
+Strings, e.g. "foo" or 'bar'
+Symbols, e.g. `baz` or `qux_Quux`
+Operators, e.g. `+` or `–`
+Special punctuation, including `(, }` and `;`
+
+So, the lexer is really just a function that takes in a string (some Cell source code) and returns all the tokens it finds in that string. The main function is shown in listing 1.
+
+```
+def lex(chars_iter):
+  chars = PeekableStream(chars_iter)
+  while chars.next is not None:
+    c = chars.move_next()
+    if c in " \n": pass
+      # Ignore white space
+    elif c in "(){},;=:": yield (c, "")  
+      # Special characters
+    elif c in "+-*/":  yield ("operation", c)
+    elif c in ("'", '"'): yield ("string",
+      _scan_string(c, chars))
+    elif re.match("[.0-9]", c): yield ("number",
+      _scan(c, chars, "[.0-9]"))
+    elif re.match("[_a-zA-Z]", c):
+      yield ("symbol", _scan(c, chars, 
+             "[_a-zA-Z0-9]"))
+    elif c == "\t": raise Exception(
+      "Tabs are not allowed in Cell.")
+    else: raise Exception(
+      "Unexpected character: '" + c + "'.")
+```
+			
+**Listing 1**
+The lex function takes in an argument called chars_iter that provides the characters of the code we are lexing. This can be anything that gives us single characters if we loop through it, for example an ordinary string. We immediately wrap chars_iter in a PeekableStream , which is a little class (shown in listing 2) that allows us to check one character ahead in the stream of characters we are receiving.
+
+```
+class PeekableStream:
+  def __init__(self, iterator):
+    self.iterator = iter(iterator)
+    self._fill()
+  def _fill(self):
+    try:
+      self.next = next(self.iterator)
+    except StopIteration:
+      self.next = None
+  def move_next(self):
+    ret = self.next
+    self._fill()
+    return ret
+```
+
 #### 2. Tokens
 A token is a small unit of a language. A token might be a variable or function name (AKA an identifier), an operator or a number.
 
