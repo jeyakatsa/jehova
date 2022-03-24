@@ -100,6 +100,27 @@ def _scan_string(delim, chars):
 
 Continuing through the big `if` / `elif` block in the `lex` function (listing 1), next we come to numbers. The first character in a number will always be a number or a decimal point, so when we see one of those we call the `_scan` function, telling it to keep consuming characters while it can see numbers or decimal points. 
 
+**Listing 4**
+```
+def _scan(first_char, chars, allowed):
+  ret = first_char
+  p = chars.next
+  while p is not None and re.match(allowed, p):
+    ret += chars.move_next()
+    p = chars.next
+  return ret
+```
+			
+`_scan` is similar to `_scan_string` , but instead of continuing until it reaches a closing quote, it continues reading characters until it finds one that is not allowed. It uses a regular expression to handle this, and for a number, the regular expression is [.0-9], which just means only numbers and decimal points are allowed. Notice that `"0.4.3"` would count as a number here, or even `"...."` . It would certainly be nice to tell the programmer that they made a mistake like this, but we don’t necessarily need to do this in the lexer – we might choose to check this in the parser, or in a later validation stage.
+
+The next `elif` in the `lex` function (listing 1) checks for a symbol like a variable name. These must start with a letter or an underscore. Once we have found a letter or an underscore, we call the `_scan` function again, and the characters that are allowed include numbers as well as letters and underscores. Notice that at this point, the lexer does not care at all whether this is a variable name, a function name, or something else. In fact it doesn’t even care whether you are allowed to write a symbol at this point in the program – all it cares about is that the characters it found make a symbol. It’s the parser’s job to care about what is allowed where.
+
+It is common in lots of programming languages to allow numbers in symbols, but not for the first character. If you ever wondered why that is, this might help to explain – by disallowing numbers as the first character, we make it easy for the lexer to tell the difference between numbers and symbols, without having to scan through the whole token first.
+
+The last two branches of the `if` / `elif` structure in the `lex` function handle tab characters (which are simply never allowed in Cell programs) and anything else that was unexpected. Both of these produce (fairly unhelpful) error messages.
+
+We have now talked about the entire source code of Cell’s lexer – that is all there is, so if you understand it, you have a good chance of understanding the lexer in your favourite programming language, or of writing your own.
+
 #### 2. Tokens
 A token is a small unit of a language. A token might be a variable or function name (AKA an identifier), an operator or a number.
 
